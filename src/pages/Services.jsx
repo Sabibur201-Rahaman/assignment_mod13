@@ -4,9 +4,9 @@ function Services() {
   return (
     <div>
       <ul>
-      <li><Link to='/'>Contact</Link></li>
-        <li><Link to='/About'>About</Link></li>
-        <li><Link to='/Blog'>Blog</Link></li>
+      <li><NavLink className={({isActive})=>isActive?'activeItem':'pendingItem'} to='/Contact'>Contact</NavLink></li>
+        <li><NavLink className={({isActive})=>isActive?'activeItem':'pendingItem'} to='/About'>About</NavLink></li>
+        <li><NavLink className={({isActive})=>isActive?'activeItem':'pendingItem'} to='/Blog'>Blog</NavLink></li>
       </ul>
     </div>
   )

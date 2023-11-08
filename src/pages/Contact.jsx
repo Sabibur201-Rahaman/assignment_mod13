@@ -7,7 +7,7 @@ let[data,setData]=useState()
            let response=await fetch('https://dummyjson.com/products/1')
             let result=response.json() 
             setData(result)
-        })()
+        }),([])
     },[])
   return (
     <div>
